@@ -35,6 +35,8 @@ and open the template in the editor.
         $second->add_grade(50);
         $students['a456'] = $second;
         
+        ksort($students); // one of the many sort functions
+        
         foreach ($students as $student)
             echo $student->toString();
         ?>
